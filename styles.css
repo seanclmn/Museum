@@ -29,6 +29,7 @@
 
 
 .container {
+
     padding-top: 100px;
     padding-left: 15%;
     display: inline-flex;
@@ -41,6 +42,7 @@
 }
 
 .info {
+    background: rgb(219, 230, 208);
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
