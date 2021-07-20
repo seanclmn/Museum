@@ -27,16 +27,18 @@
 
 .container {
     padding-top: 40px;
+    padding-left: 15%;
     display: inline-flex;
     vertical-align: top;
 
-    height: 400px;
-    width: 100%;
+    height: 350px;
+    width: 70%;
 
 
 }
 
 .info {
     padding-left: 40px;
+    padding-right: 40px;
     width:50%
 }
