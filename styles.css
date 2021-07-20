@@ -1,0 +1,40 @@
+.top {
+    padding-left: 120px;
+    height: 800px;
+    width: 40%
+}
+
+.imginside_left{
+    display: inline-flex;
+    margin-left: auto;
+
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.imginside_right{
+    display: inline-flex;
+
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+
+.container {
+    background-color: rosybrown;
+    display: inline-flex;
+    /* vertical-align: top; */
+
+    height: 500px;
+    width: 100%;
+
+
+}
+
+.info {
+    padding-left: 40px;
+}
