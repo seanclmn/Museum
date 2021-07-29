@@ -1,32 +1,40 @@
 blocks = document.querySelectorAll(".block")
-container = document.querySelector("#drop_zone")
+console.log(blocks)
+containers = document.querySelectorAll(".container")
 
-// function onDragStart(event){
-//     event 
-//         .dataTransfer
-//         .setData('text/plain', event.target.id)
+blocks.forEach(item => {
 
-//     event
-//         .currentTarget
-//         .style
-//         .background = "blue"
-// }
+    item.draggable = "true"
+    console.log(blocks[0])
+
+    // let i = blocks.indexOf(item)
+
+    // still_blocks = blocks.splice(i,1)
+        
+    // still_blocks.forEach(element =>{
+    //     element.draggable = "false"
+    // })
+
+    item.addEventListener("dragstart",()=>{
 
 
-blocks.forEach(block => {
-    block.addEventListener("dragstart",()=>{
-        block.classList.add("dragging_now")
-        block.style.background = "blue"
+
+        item.classList.add("dragging_now")
+        item.style.background = "blue"
     })
-    block.addEventListener("dragend",()=>{
-        block.classList.remove("draggin_now")
-        block.style.background = "antiquewhite"
+    item.addEventListener("dragend",()=>{
+        item.classList.remove("draggin_now")
+        item.style.background = "antiquewhite"
     })
-})
+    }
+)
 
 
-container.addEventListener("dragover",(event)=>{
-    event.preventDefault()
-    draggable = document.querySelector(".dragging_now")
-    container.appendChild(draggable)
+containers.forEach(container =>{
+    container.addEventListener("dragover",(event)=>{
+        // event.preventDefault()
+        draggable = document.querySelector(".dragging_now")
+        container.appendChild(draggable)
+    })
+
 })
