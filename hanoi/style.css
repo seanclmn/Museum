@@ -1,0 +1,11 @@
+.block{
+    background-color: antiquewhite;
+    height: 200px;
+    width: 200px;
+}
+
+#drop_zone{
+    background-color: black;
+    height: 400px;
+    width: 400px;
+}
