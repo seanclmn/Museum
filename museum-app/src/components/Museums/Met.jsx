@@ -1,21 +1,33 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState} from 'react'
+import Search from './Met/Search'
 import './Met.css'
 
-import MetForm from './Met/MetForm'
-import Search from './Met/Search'
-
-function Met() {
+function Met2() {
     const initialState=""
     const [searchQuery,setSearchQuery]=useState("")
-    const [arrayID,setArrayID]=useState([])
+    const [arrayID,setArrayID]=useState([0])
+    const [index,setIndex]=useState(0)
 
 
-    function getId(url){
+    let url_array=`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchQuery.search}`
+    const next=()=>{
+        if(index!==arrayID.length-1){
+            setIndex(index+1)
+        }
+        
+    }
+    const last=()=>{
+        if(index!==0){
+            setIndex(index-1)
+        }
+    }
+
+    const getId =(url)=>{
         
         fetch(url)
             .then((res) => res.json())
             .then(res => {
-                setArrayID(res.objectIDs.slice(0, 12))
+                setArrayID(res.objectIDs)
             })
             .catch(console.error);
         }
@@ -23,12 +35,10 @@ function Met() {
     
 
     const handleChange = (event)=>{
-        console.log(searchQuery)
+        console.log(arrayID[index])
         setSearchQuery({ ...setSearchQuery, [event.target.id]: event.target.value });
     }
 
-
-    
     const handleSubmit = (event) =>{
         event.preventDefault();
         // do something with the data in the component state
@@ -36,9 +46,10 @@ function Met() {
         // clear the form
 
         let url_array=`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchQuery.search}`
-        
+        setIndex(0)
         getId(url_array)
         setSearchQuery(initialState);
+        setArrayID([0])
     }
 
 
@@ -61,16 +72,34 @@ function Met() {
                             <option value="Artist Name">Artist Name</option>
                             <option value="Art Title">Art Title</option>
                         </select>
+                        
 
                     </div>
                     
                 </form>
             </div>
-            <div className="grid_container">
-                {arrayID!==null && arrayID.map(element=><Search objectID = {element}/>)}
-            </div>
+            {arrayID[0]!==0 &&
+                <div className="image_container">
+
+                    <div className="buttonBlock">
+                        <button onClick={last}>last</button>
+                    </div> 
+
+                    <div className="imageBlock">
+                        {<Search objectID={arrayID[index]}/>}
+                    </div>
+                    
+                    <div className="buttonBlock">
+                        <button onClick={next}>next</button>
+                    </div>
+
+                </div>
+            
+            }
+            
+            
         </div>
     )
 }
 
-export default Met
+export default Met2
