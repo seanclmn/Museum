@@ -57,6 +57,10 @@ function Met() {
                         />
 
                         <button type="submit" className="search_button">Search</button>
+                        <select value="criteria" className="criteria"> 
+                            <option value="Artist Name">Artist Name</option>
+                            <option value="Art Title">Art Title</option>
+                        </select>
 
                     </div>
                     

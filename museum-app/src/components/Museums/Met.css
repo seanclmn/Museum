@@ -22,7 +22,7 @@ form{
     margin-left: auto;
     margin-right: auto;
 
-    width: 450px;
+    width: 550px;
     height: 100px;
 
     display: flex;
@@ -32,15 +32,22 @@ form{
     
 }
 .search_container{
-    width: 310px;
+    width: 410px;
 }
 
-#search{
+input{
+    display: inline-block;
     width: 200px;
 
 }
 
 .search_button{
+    display: inline-block;
     width: 100px;
 
+}
+
+.criteria{
+    display: inline-block;
+    width: 100px;
 }

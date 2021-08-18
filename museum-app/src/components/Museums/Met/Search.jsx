@@ -15,17 +15,10 @@ function Search(props) {
             .catch(console.error);
         }
     
-
-    
-
-
-
-    
     )
     return (
-
         <div className="block">
-            <img id = "block_image" src={object.primaryImage}/>
+            <img id = "block_image" src={object.primaryImage} alt={object.title}/>
             {object.title!=='' ? <p style={{fontWeight: "bold"}}>'{object.title}'</p>: <p style={{fontWeight: "bold"}}>'Unknown'</p>}
             <p >{object.artistAlphaSort}</p>
         </div>
