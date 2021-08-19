@@ -6,6 +6,7 @@ import Home from './components/Main/Home.jsx'
 
 import Met from './components/Museums/Met.jsx'
 import MetSearch from './components/Museums/Met/MetSearch.jsx'
+import DepartmentData from './components/Museums/Met/DepartmentData.jsx'
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         
         <Route exact path='/met' component={Met}/>
         <Route exact path='/met/search' component={MetSearch}/>
+        <Route exact path='/met/department' component={DepartmentData}/>
         <Route exact path='/' render={(props)=><Home image={image} />}/>
       </div>
     </div>
