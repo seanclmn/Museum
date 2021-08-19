@@ -43,12 +43,15 @@ function Met2() {
         // do something with the data in the component state
         console.log(searchQuery);
         // clear the form
+        if(searchQuery.length!==0){
+            let url_array=`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchQuery.search}`
+            setIndex(0)
+            getId(url_array)
+            setSearchQuery(initialState);
+            setArrayID([0])
 
-        let url_array=`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchQuery.search}`
-        setIndex(0)
-        getId(url_array)
-        setSearchQuery(initialState);
-        setArrayID([0])
+        }
+        
     }
 
 

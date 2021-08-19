@@ -10,7 +10,7 @@ function Header(props) {
 
             <div id="left_header">
                 <Link to='/' className="header_item">
-                    <h3 style={{color: "black"}}>The Art Archives</h3>
+                    <h3 className="logo">The Art Archives</h3>
                 </Link>
             </div>
 
@@ -28,7 +28,7 @@ function Header(props) {
             </div>
 
             <div className="header_item" id="right_header">
-                <h3>Settings</h3>
+                <h3>About</h3>
             </div>
 
         </div>

@@ -92,9 +92,9 @@ input{
 }
 
 .next:hover{
-    width: 55px;
+    width: 53px;
 }
 
 .next:active{
-    width: 45px;
+    width: 50px;
 }
