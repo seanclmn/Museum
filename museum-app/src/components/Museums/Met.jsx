@@ -96,7 +96,7 @@ function Met2() {
                     </div> 
 
                     <div className="imageBlock">
-                        {<Search objectID={arrayID[index]}/>}
+                        {arrayID[index]===0 ? <div><h1>search for art</h1></div> :<Search objectID={arrayID[index]}/>}
                     </div>
                     
                     <div className="buttonBlock">
