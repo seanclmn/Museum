@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route,Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import './Header.css'
 
@@ -15,13 +15,13 @@ function Header(props) {
             </div>
 
             <div id="center_header">
-                <Link to="/Met" className="header_item" onMouseOver={()=>{props.setImage('./met.jpeg')}}>                 
+                <Link to="/met" className="header_item" onMouseOver={()=>{props.setImage('./met.jpeg')}}>                 
                     <h3 style={{color: "black"}}>The Met</h3>
                 </Link>
-                <Link to="/Getty" className="header_item" onMouseOver={()=>{props.setImage('./Getty.webp')}}>                 
+                <Link to="/getty" className="header_item" onMouseOver={()=>{props.setImage('./Getty.webp')}}>                 
                     <h3 style={{color: "black"}}>The Getty</h3>
                 </Link>
-                <Link to="/Met" className="header_item" onMouseOver={()=>{props.setImage('./met.jpeg')}}>                 
+                <Link to="/met" className="header_item" onMouseOver={()=>{props.setImage('./met.jpeg')}}>                 
                     <h3 style={{color: "black"}}>The Met</h3>
                 </Link>
                 
