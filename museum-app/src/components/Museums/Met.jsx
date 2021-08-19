@@ -23,7 +23,6 @@ function Met2() {
     }
 
     const getId =(url)=>{
-        
         fetch(url)
             .then((res) => res.json())
             .then(res => {
@@ -56,7 +55,7 @@ function Met2() {
     return (
         <div>
             <div>
-                <form onSubmit={handleSubmit} >
+                <form onSubmit={handleSubmit} classNamem=".form">
                     <label htmlFor="search">Search for Art: </label>
 
                     <div className="search_container">
@@ -67,12 +66,18 @@ function Met2() {
                             value={searchQuery.search}
                         />
 
-                        <button type="submit" className="search_button">Search</button>
+                        <button type="submit" className="search_button">
+                            <img className="search" src={process.env.PUBLIC_URL+'/icons/search.png'}/>    
+                        </button>
+                        
+                        
+
+                    </div>
+                    <div>
                         <select value="criteria" className="criteria"> 
                             <option value="Artist Name">Artist Name</option>
                             <option value="Art Title">Art Title</option>
                         </select>
-                        
 
                     </div>
                     
@@ -82,7 +87,9 @@ function Met2() {
                 <div className="image_container">
 
                     <div className="buttonBlock">
-                        <button onClick={last}>last</button>
+                        
+                        <img onClick={last} className="next" style={{transform: 'rotate(180deg)'} } src={process.env.PUBLIC_URL+'/icons/next.jpeg'}/>
+                        
                     </div> 
 
                     <div className="imageBlock">
@@ -90,7 +97,10 @@ function Met2() {
                     </div>
                     
                     <div className="buttonBlock">
-                        <button onClick={next}>next</button>
+                        {/* <button onClick={next} className="next">
+                                <img id="met_image" style={{width: '15px'}} src={process.env.PUBLIC_URL+'/icons/next.jpeg'}/>
+                        </button> */}
+                        <img onClick={next} className="next" src={process.env.PUBLIC_URL+'/icons/next.jpeg'}/>
                     </div>
 
                 </div>

@@ -23,28 +23,41 @@ form{
     margin-right: auto;
 
     width: 550px;
-    height: 100px;
+    height: 70px;
 
     display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
+    justify-content: space-evenly;
+    padding-top: 30px;
 
     
 }
 .search_container{
-    width: 410px;
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
 }
 
 input{
     display: inline-block;
     width: 200px;
+    border-right-style: none;
 
 }
 
 .search_button{
-    display: inline-block;
-    width: 100px;
+    border-left-style: none;
+    padding-top: 2px;
 
+    background-color: white;
+    display: inline-block;
+    width: 35px;
+    height: 21px;
+
+}
+
+.search{
+    border-style: none;
+    width: 12px;
 }
 
 .criteria{
@@ -70,7 +83,18 @@ input{
 }
 
 
-button{
+.next{
+    display:block;
+    margin-top: 230px;
     margin-left: auto;
     margin-right: auto;
+    width: 50px;
+}
+
+.next:hover{
+    width: 55px;
+}
+
+.next:active{
+    width: 45px;
 }
