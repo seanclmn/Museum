@@ -3,6 +3,7 @@
 
     display: flex;
     justify-content: space-between;
+    background-color: rgb(59, 198, 253);
 }
 
 .header_item{
@@ -43,10 +44,10 @@
 
 .logo{
     font-family: 'Cormorant', serif;
-    color: black;
-    font-size: 23px;
+    color: white;
+    font-size: 28px;
 }
 
 .logo:hover{
-    color: rgb(217, 24, 255);
+    color: rgb(231, 231, 231);
 }

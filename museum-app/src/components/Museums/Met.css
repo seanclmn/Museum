@@ -39,9 +39,11 @@
 .MetLinkButton{
     margin-top: 250px;
     border-radius: 20px;
-    border: none;
+    border-style: solid;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .MetLinkButton:hover{
-    background-color: rgb(243, 203, 253);
+    background-color: rgb(255, 255, 255, 0.3);
 }

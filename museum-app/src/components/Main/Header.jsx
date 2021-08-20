@@ -16,19 +16,19 @@ function Header(props) {
 
             <div id="center_header">
                 <Link to="/met" className="header_item" onMouseOver={()=>{props.setImage('./met.jpeg')}}>                 
-                    <h3 style={{color: "black"}}>The Met</h3>
+                    <h3 style={{color: "white"}}>The Met</h3>
                 </Link>
                 <Link to="/getty" className="header_item" onMouseOver={()=>{props.setImage('./Getty.webp')}}>                 
-                    <h3 style={{color: "black"}}>The Getty</h3>
+                    <h3 style={{color: "white"}}>The Getty</h3>
                 </Link>
                 <Link to="/met" className="header_item" onMouseOver={()=>{props.setImage('./met.jpeg')}}>                 
-                    <h3 style={{color: "black"}}>The Met</h3>
+                    <h3 style={{color: "white"}}>The Met</h3>
                 </Link>
                 
             </div>
 
             <div className="header_item" id="right_header">
-                <h3>About</h3>
+                <h3 style={{color: "white"}}>About</h3>
             </div>
 
         </div>

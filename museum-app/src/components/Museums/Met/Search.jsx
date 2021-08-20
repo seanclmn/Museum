@@ -10,7 +10,6 @@ function Search({objectID}) {
         if(objectID>0){
             fetch(url_object)
             .then((res) => res.json())
-            
             .then(res => {
                 setObject(res)
             })
