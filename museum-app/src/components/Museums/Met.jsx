@@ -14,7 +14,7 @@ function Met() {
             </div>
 
             <div className="MetLinks" id="Departments">
-                <Link >
+                <Link to="/met/department">
                     <button className="MetLinkButton">
                         <h3 style={{color: "white"}}>Explore Collections</h3>
                     </button>

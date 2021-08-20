@@ -79,6 +79,7 @@ input:focus{
 
 .imageBlock{
     display: inline-block;
+    text-align: center;
 }
 
 .buttonBlock{
@@ -110,3 +111,6 @@ input:focus{
     width: 50px;
 }
 
+.artist_info{
+    text-align: center;
+}

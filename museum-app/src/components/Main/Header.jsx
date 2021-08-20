@@ -15,13 +15,23 @@ function Header(props) {
             </div>
 
             <div id="center_header">
-                <Link to="/met" className="header_item" onMouseOver={()=>{props.setImage('./met.jpeg')}}>                 
+                <Link to="/met" className="header_item" onMouseOver={()=>{
+                    props.setImage('./met.jpeg')
+                    props.setMuseum('Met')
+                    }}>                 
                     <h3 style={{color: "white"}}>The Met</h3>
                 </Link>
-                <Link to="/getty" className="header_item" onMouseOver={()=>{props.setImage('./Getty.webp')}}>                 
+                <Link to="/getty" className="header_item" onMouseOver={()=>{
+                    props.setImage('./Getty.webp')
+                    props.setMuseum('Getty')
+                    
+                    }}>                 
                     <h3 style={{color: "white"}}>The Getty</h3>
                 </Link>
-                <Link to="/met" className="header_item" onMouseOver={()=>{props.setImage('./met.jpeg')}}>                 
+                <Link to="/met" className="header_item" onMouseOver={()=>{
+                    props.setImage('./met.jpeg')
+                    props.setMuseum('Met')
+                    }}>                 
                     <h3 style={{color: "white"}}>The Met</h3>
                 </Link>
                 

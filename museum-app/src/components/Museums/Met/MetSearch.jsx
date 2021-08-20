@@ -2,14 +2,14 @@ import React,{useState} from 'react'
 import Search from './Search'
 import './MetSearch.css'
 
-function MetSearch() {
+function MetSearch(props) {
     const initialState=""
     const [searchQuery,setSearchQuery]=useState("")
     const [arrayID,setArrayID]=useState([0])
     const [index,setIndex]=useState(0)
 
 
-    let url_array=`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchQuery.search}`
+    let url_array=`https://collectionapi.metmuseum.org/public/collection/v1/search?&${props.department}hasImages=true&q=${searchQuery.search}`
     
     const next=()=>{
         if(index!==arrayID.length-1){
@@ -45,17 +45,12 @@ function MetSearch() {
         console.log(searchQuery);
         // clear the form
         if(searchQuery.length!==0){
-            let url_array=`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchQuery.search}`
             setIndex(0)
             getId(url_array)
             setSearchQuery(initialState);
             setArrayID([0])
-
         }
-        
     }
-
-
     return (
         <div>
             <div>
@@ -79,10 +74,10 @@ function MetSearch() {
 
                     </div>
                     <div>
-                        <select value="criteria" className="criteria"> 
+                        {/* <select value="criteria" className="criteria"> 
                             <option value="Artist Name">Artist Name</option>
                             <option value="Art Title">Art Title</option>
-                        </select>
+                        </select> */}
 
                     </div>
                     

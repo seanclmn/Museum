@@ -1,0 +1,18 @@
+.departments_container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.department_block{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+
+    text-align: center;
+}

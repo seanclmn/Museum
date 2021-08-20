@@ -6,24 +6,27 @@ import Home from './components/Main/Home.jsx'
 
 import Met from './components/Museums/Met.jsx'
 import MetSearch from './components/Museums/Met/MetSearch.jsx'
-import DepartmentData from './components/Museums/Met/DepartmentData.jsx'
+import DepartmentSearch from './components/Museums/Met/DepartmentSearch.jsx'
+import DepartmentSelect from './components/Museums/Met/DepartmentSelect.jsx'
 import './App.css';
 
 function App() {
   const[image,setImage]=useState("./met.jpeg")
+  const[museum,setMuseum]=useState("The Met")
   return (
     <div className="App">
 
       <header>
-        <Header setImage={setImage}/>
+        <Header setImage={setImage} setMuseum={setMuseum}/>
       </header>
 
       <div>
         
         <Route exact path='/met' component={Met}/>
-        <Route exact path='/met/search' component={MetSearch}/>
-        <Route exact path='/met/department' component={DepartmentData}/>
-        <Route exact path='/' render={(props)=><Home image={image} />}/>
+        <Route exact path='/met/search' render={(props)=><MetSearch department={""}/>}/>
+        <Route exact path='/met/department/1' component={DepartmentSearch}/>
+        <Route exact path='/met/department' component={DepartmentSelect}/>
+        <Route exact path='/' render={(props)=><Home image={image} museum={museum}/>}/>
       </div>
     </div>
 
