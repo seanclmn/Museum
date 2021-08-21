@@ -21,7 +21,7 @@ function Search({objectID}) {
         <div className="block">
             <img id = "block_image" src={object.primaryImage} alt={object.title}/>
             <div >
-
+                
                 <p className="artist_info" style={{fontWeight: "bold"}}>'{object.title}'</p>
                 <p className="artist_info" >{object.artistAlphaSort}</p>
             </div>

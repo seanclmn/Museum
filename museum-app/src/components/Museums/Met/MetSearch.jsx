@@ -5,7 +5,7 @@ import './MetSearch.css'
 function MetSearch(props) {
     const initialState=""
     const [searchQuery,setSearchQuery]=useState("")
-    const [arrayID,setArrayID]=useState([0])
+    const [arrayID,setArrayID]=useState(null)
     const [index,setIndex]=useState(0)
 
 
@@ -35,7 +35,6 @@ function MetSearch(props) {
     
 
     const handleChange = (event)=>{
-        console.log(arrayID[index])
         setSearchQuery({ ...setSearchQuery, [event.target.id]: event.target.value });
     }
 
@@ -83,7 +82,8 @@ function MetSearch(props) {
                     
                 </form>
             </div>
-            {arrayID[0]!==0 &&
+            {arrayID!==null ?
+
                 <div className="image_container">
 
                     <div className="buttonBlock">
@@ -91,14 +91,36 @@ function MetSearch(props) {
                     </div> 
 
                     <div className="imageBlock">
-                        {arrayID[index]===0 ? <div><h1>search for art</h1></div> :<Search objectID={arrayID[index]}/>}
+                        <Search objectID={arrayID[index]}/>
                     </div>
-                    
+                        
                     <div className="buttonBlock">
                         <img onClick={next} className="next" src={process.env.PUBLIC_URL+'/icons/next.jpeg'}/>
                     </div>
 
+
                 </div>
+
+                :
+
+                <div className="image_container">
+
+                    <div className="buttonBlock">
+                        <img onClick={last} className="next" style={{transform: 'rotate(180deg)'} } src={process.env.PUBLIC_URL+'/icons/next.jpeg'}/>
+                    </div> 
+
+                    <div className="imageBlock">
+                        No results. Keep searching!
+                    </div>
+                        
+                    <div className="buttonBlock">
+                        <img onClick={next} className="next" src={process.env.PUBLIC_URL+'/icons/next.jpeg'}/>
+                    </div>
+
+
+                </div>
+
+                
             
             }
             
