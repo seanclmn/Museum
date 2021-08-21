@@ -24,7 +24,7 @@ function App() {
         
         <Route exact path='/met' component={Met}/>
         <Route exact path='/met/search' render={(props)=><MetSearch department={""}/>}/>
-        <Route exact path='/met/department/1' component={DepartmentSearch}/>
+        <Route exact path='/met/department/:number' render={(routerProps)=><DepartmentSearch match={routerProps.match}/>}/>
         <Route exact path='/met/department' component={DepartmentSelect}/>
         <Route exact path='/' render={(props)=><Home image={image} museum={museum}/>}/>
       </div>

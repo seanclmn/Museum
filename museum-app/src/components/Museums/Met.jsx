@@ -14,10 +14,10 @@ function Met() {
             </div>
 
             <div className="MetLinks" id="Departments">
-                <Link to="/met/department">
+                <Link to={`/met/department/`}>
                     <button className="MetLinkButton">
                         <h3 style={{color: "white"}}>Explore Collections</h3>
-                    </button>
+                    </button>1
                 </Link>
             </div>
 

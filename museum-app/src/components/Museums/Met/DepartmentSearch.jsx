@@ -3,10 +3,10 @@ import Search from './Search'
 import MetSearch from './MetSearch'
 
 
-function DepartmentSearch() {
+function DepartmentSearch(props) {
     return(
         <div>
-            <MetSearch department={`departmentId=1&`}/>
+            <MetSearch department={`departmentId=${props.match.params.number}&`}/>
         </div>
     )
 }
