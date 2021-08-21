@@ -14,9 +14,9 @@ function MetSearch(props) {
     const next=()=>{
         if(index!==arrayID.length-1){
             setIndex(index+1)
-        }
-        
+        }   
     }
+
     const last=()=>{
         if(index!==0){
             setIndex(index-1)
@@ -50,6 +50,7 @@ function MetSearch(props) {
             setArrayID([0])
         }
     }
+
     return (
         <div>
             <div>
