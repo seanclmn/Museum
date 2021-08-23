@@ -23,7 +23,7 @@ function AIC() {
             </div>
 
             <div className="AICLinks" id="AboutAIC">
-                <a href='https://www.artic.edu/'>
+                <a href='https://www.artic.edu/about-us/history'>
                     <button className="AICLinkButton">
                         <h3 style={{color: "white"}}>Learn About the AIC</h3>
                     </button>

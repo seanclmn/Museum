@@ -19,7 +19,7 @@ function Header(props) {
                     props.setImage('./met.jpeg')
                     props.setMuseum('Met')
                     }}>                 
-                    <h3 style={{color: "white"}}>The Met</h3>
+                    <h3 className="museum_name">The Met</h3>
                 </Link>
 
                 <Link to="/AIC" className="header_item" onMouseOver={()=>{
@@ -27,7 +27,7 @@ function Header(props) {
                     props.setMuseum('AIC')
                     
                     }}>                 
-                    <h3 style={{color: "white"}}>The Art Institute of Chicago</h3>
+                    <h3 className="museum_name">The Art Institute of Chicago</h3>
                 </Link>
 
                 {/* <Link to="/met" className="header_item" onMouseOver={()=>{
@@ -41,7 +41,7 @@ function Header(props) {
 
             <div className="header_item" id="right_header">
                 <Link to='/about' >
-                    <h3 style={{color: "white"}}>About</h3>
+                    <h3 className="museum_name">About</h3>
                 </Link>
             </div>
 

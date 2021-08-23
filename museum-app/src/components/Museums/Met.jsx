@@ -23,7 +23,7 @@ function Met() {
             </div>
 
             <div className="MetLinks" id="AboutMet">
-                <a href="https://www.metmuseum.org/">
+                <a href="https://www.metmuseum.org/about-the-met">
                     <button className="MetLinkButton">
                         <h3 style={{color: "white"}}>Learn About the Met</h3>
                     </button>

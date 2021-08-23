@@ -111,7 +111,12 @@ function MetSearch(props) {
                     </div> 
 
                     <div className="imageBlock">
-                        No results. Keep searching!
+                        No results yet. Keep searching!
+
+                        <div className="block">
+                            <img id = "block_image" src='https://miro.medium.com/max/1400/1*alk8KxcB-XwJfMK71kQjvw.jpeg' alt="monalisa"/>
+
+                        </div>
                     </div>
                         
                     <div className="buttonBlock">
