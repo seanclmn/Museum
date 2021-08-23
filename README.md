@@ -24,7 +24,7 @@
 ## Getting Started
 
 
-
+##### To explore the web app, simply click the link above. Go the either the Met page or the Art Institute of Chicago page. To search for artwork across all departments, select "search artwork". To search for artwork in a specific department, select "explore collections" and select a department. Once you are on the search page, type in a key word and search to find relevant artwork.
 
 
 
@@ -32,4 +32,4 @@
 
 ## Contribution Guidelines
 
-##### 
+##### Notify me of any problems or suggestions via an issue on this repository. If you have any contribution to share please create a pull request. 
