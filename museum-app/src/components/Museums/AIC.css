@@ -1,0 +1,61 @@
+
+*{
+    text-decoration: none;
+    color: black;
+}
+
+
+*:active{
+    text-decoration: none;
+    
+}
+
+
+.AICLinks{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    height: 350px;
+
+    background-size: 100% 100%;
+
+}
+
+#AICSearchLink{
+    background-image: url("https://medias.gazette-drouot.com/prod/medias/mediatheque/66062.jpg");
+}
+
+#AICDepartments{
+    background-image: url("https://s3-prod.chicagobusiness.com/s3fs-public/ISSUE01-180519840-AR.jpeg");
+}
+#AboutAIC{
+    background-image: url("https://news.wttw.com/sites/default/files/styles/full/public/article/image-non-gallery/Early%20AIC%20-%20Chicago%20History%20Museum.jpg?itok=n0-1_cHS");
+
+}
+
+.AICLinkButton{
+    margin-top: 250px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.AICLinkButton:hover{
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.construction{
+
+
+    text-align: center;
+}
+
+
+#construction_img{
+    margin-right: auto;
+    margin-left: auto;
+}

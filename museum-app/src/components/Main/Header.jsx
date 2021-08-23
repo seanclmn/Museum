@@ -21,24 +21,28 @@ function Header(props) {
                     }}>                 
                     <h3 style={{color: "white"}}>The Met</h3>
                 </Link>
-                <Link to="/getty" className="header_item" onMouseOver={()=>{
-                    props.setImage('./Getty.webp')
-                    props.setMuseum('Getty')
+
+                <Link to="/AIC" className="header_item" onMouseOver={()=>{
+                    props.setImage('./AIC.jpeg')
+                    props.setMuseum('AIC')
                     
                     }}>                 
-                    <h3 style={{color: "white"}}>The Getty</h3>
+                    <h3 style={{color: "white"}}>The Art Institute of Chicago</h3>
                 </Link>
-                <Link to="/met" className="header_item" onMouseOver={()=>{
+
+                {/* <Link to="/met" className="header_item" onMouseOver={()=>{
                     props.setImage('./met.jpeg')
                     props.setMuseum('Met')
                     }}>                 
                     <h3 style={{color: "white"}}>The Met</h3>
-                </Link>
+                </Link> */}
                 
             </div>
 
             <div className="header_item" id="right_header">
-                <h3 style={{color: "white"}}>About</h3>
+                <Link to='/about' >
+                    <h3 style={{color: "white"}}>About</h3>
+                </Link>
             </div>
 
         </div>

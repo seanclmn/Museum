@@ -5,6 +5,7 @@ import './Met.css'
 function Met() {
     return (
         <div >
+
             <div className="MetLinks" id="MetSearchLink">
                 <Link to='/met/search'>
                     <button className="MetLinkButton">
@@ -17,17 +18,17 @@ function Met() {
                 <Link to={`/met/department/`}>
                     <button className="MetLinkButton">
                         <h3 style={{color: "white"}}>Explore Collections</h3>
-                    </button>1
+                    </button>
                 </Link>
             </div>
 
             <div className="MetLinks" id="AboutMet">
-                <Link >
+                <a href="https://www.metmuseum.org/">
                     <button className="MetLinkButton">
                         <h3 style={{color: "white"}}>Learn About the Met</h3>
                     </button>
                     
-                </Link>
+                </a>
             </div>
         </div>
     )
