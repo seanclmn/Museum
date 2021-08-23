@@ -15,7 +15,7 @@
 
 ## Technologies
 
-##### This web app was built using React JS
+##### This web app was built using React JS. Two web APIs were used to collect data: The Met API and the Art Institute of Chicago API. <br/><br/>https://api.artic.edu/docs/#quick-start <br/><br/> https://metmuseum.github.io/
 
 
 
